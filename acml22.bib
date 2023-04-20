@@ -2523,35 +2523,12 @@
 @InProceedings{chaudhuri22,
   title =	 {{ProtoBandit}: Efficient Prototype Selection via
                   Multi-Armed Bandits},
-  author =	 {Chaudhuri, Arghya Roy and Jawanpuria, Pratik and
+  author =	 {Roy Chaudhuri, Arghya and Jawanpuria, Pratik and
                   Mishra, Bamdev},
   pages =	 {169-184},
   crossref =	 {acml22},
   year =	 2022,
-  abstract =	 {In this work, we propose a multi-armed bandit based
-                  framework for identifying a compact set of
-                  informative data instances (i.e., the prototypes)
-                  that best represents a given target
-                  set. Prototypical examples of a given dataset offer
-                  interpretable insights into the underlying data
-                  distribution and assist in example-based reasoning,
-                  thereby influencing every sphere of human decision
-                  making. A key challenge is the large-scale setting,
-                  in which similarity comparison between pairs of data
-                  points needs to be done for almost all possible
-                  pairs. We propose to overcome this limitation by
-                  employing stochastic greedy search on the space of
-                  prototypical examples and multi-armed bandit
-                  approach for reducing the number of similarity
-                  comparisons. A salient feature of the proposed
-                  approach is that the total number of similarity
-                  comparisons needed is independent of the size of the
-                  target set. Empirically, we observe that our
-                  proposed approach, ProtoBandit, reduces the total
-                  number of similarity computation calls by several
-                  orders of magnitudes (100-1000 times) while
-                  obtaining solutions similar in quality to those from
-                  existing state-of-the-art approaches.}
+  abstract =	 {In this work, we propose a multi-armed bandit-based framework for identifying a compact set of informative data instances (i.e., the prototypes) from a source dataset S that best represents a given target set T. Prototypical examples of a given dataset offer interpretable insights into the underlying data distribution and assist in example-based reasoning, thereby influencing every sphere of human decision-making. Current state-of-the-art prototype selection approaches require O(|S||T|) similarity comparisons between source and target data points, which becomes prohibitively expensive for large-scale settings. We propose to mitigate this limitation by employing stochastic greedy search in the space of prototypical examples and multi-armed bandits for reducing the number of similarity comparisons. Our randomized algorithm, ProtoBandit, identifies a set of k prototypes incurring O(|S|) similarity comparisons, which is independent of the size of the target set. An interesting outcome of our analysis is for the k-medoids clustering problem (T=S setting) in which we show that our algorithm ProtoBandit approximates the BUILD step solution of the partitioning around medoids (PAM) method in O(k|S|) complexity. Empirically, we observe that ProtoBandit reduces the number of similarity computation calls by several orders of magnitudes (100-1000 times) while obtaining solutions similar in quality to those from state-of-the-art approaches.}
 }
 
 @InProceedings{buetgolfouse22-1,
